@@ -1,0 +1,77 @@
+
+
+.GridFotosHome {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+	"foto1 foto1 foto2 foto2"
+	"foto1 foto1 foto3 foto4";
+	grid-row-gap: 0px; }
+
+.foto1{
+	grid-area: foto1; }
+.foto2{
+	grid-area: foto2; }
+.foto3{
+	grid-area: foto3; }
+.foto4{
+	grid-area: foto4; }
+
+.AnchoFotosHome {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    display: block;
+    color: $violeta;
+   
+}
+
+.ColorImg {
+    filter: grayscale(80%);
+        &:hover {
+            
+            filter: grayscale(0%); 
+            transition:all .5s ease-in-out;
+        }
+        
+}
+
+
+
+.ContenedorImgP {overflow:hidden;}
+
+
+h4 {
+    @extend %subtitulo }
+     
+     
+.LogosEmpresas {
+        height: 100px;
+        width: 200px;
+
+        &:hover {
+        transform: scale(1.2);
+        }
+    }
+    
+// carrousel
+
+.FondoCarrousel {
+    width: 100%;
+    height: 450px; }
+
+h5 { 
+    @extend %subtitulo;
+    color:$blanco; }
+
+.TextoTestimonios {
+    @include tipografia($tsecundaria,2.5rem, 200, $blanco); }
+
+.FirmaTestimonios {
+    @include tipografia ($tsecundaria, 2.5rem, 600, $blanco);
+    padding-left: 6rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    letter-spacing: 1px; }
+

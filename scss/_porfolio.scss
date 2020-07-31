@@ -1,0 +1,82 @@
+
+
+.MenuPorfolioA {
+    @extend %subtitulo;
+    font-size: 3rem;
+    list-style: none; 
+    text-decoration: none;
+    inline-size: 1rem;
+    line-height: 4rem;
+    padding: 3rem 0 3rem 0;
+     &:hover {
+         color: $amarillo;
+         text-decoration: none;
+     }
+    
+}
+
+.GridFotosPorfolio {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	"foto1 foto1 foto2 foto2"
+	"foto1 foto1 foto3 foto4"
+	"foto5 foto6 foto7 foto7"
+	"foto8 foto8 foto9 foto9"
+	"foto10 foto11 foto9 foto9"
+	"foto12 foto12 foto13 foto14";
+	grid-row-gap: 0px; }
+
+.foto1P{
+	grid-area: foto1;}
+.foto2P{
+	grid-area: foto2;}
+.foto3P{
+	grid-area: foto3;}
+.foto4P{
+	grid-area: foto4;}
+.foto5P{
+	grid-area: foto5;}
+.foto6P{
+	grid-area: foto6;}
+.foto7P{
+	grid-area: foto7;}
+.foto8P{
+	grid-area: foto8;}
+.foto9P{
+	grid-area: foto9;}
+.foto10P{
+	grid-area: foto10;}
+.foto11P{
+	grid-area: foto11;}
+.foto12P{
+	grid-area: foto12;}
+.foto13P{
+	grid-area: foto13;}
+.foto14P{
+	grid-area: foto14;}
+
+.AnchoFotosPorfolio {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    display: block;
+    &:hover {
+        filter: opacity(.5);
+        transition:all .5s ease-in-out;
+        -webkit-transform:scale(1.3);transform:scale(1.3);
+    } 
+}
+
+.ContenedorImgP {overflow:hidden;}
+
+
+
+.ContenedorTextoFinal {
+    background-color: $amarillo; }
+
+.TextoFinal { 
+    @extend %subtitulo;
+    color:$blanco;
+    padding:5rem 0 5rem 0 }
